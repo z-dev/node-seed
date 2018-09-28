@@ -5,7 +5,7 @@
   "license": "ISC",
   "scripts": {
     "build": "neutrino build --use neutrino-preset-node",
-    "check:node": "check-node-version --node \">=8.1.2 <9\"",
+    "check:node": "check-node-version --package",
     "ci": "npm run lint:js && npm run test",
     "clean": "rm -rf dist",
     "precommit": "lint-staged && npm run lint",
@@ -41,17 +41,17 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-prettier": "^2.0.1",
     "forever": "^0.15.3",
-    "husky": "^0.13.3",
-    "lint-staged": "^3.4.0",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
     "neutrino": "^5.9.0",
     "neutrino-preset-mocha": "^5.9.0",
     "neutrino-preset-node": "^5.9.1",
     "nodemon": "^1.8.1",
     "prettier": "^1.2.2",
-    "sort-package-json": "^1.6.1"
+    "sort-package-json": "^1.15.0"
   },
   "engines": {
-    "node": ">= 7.9.0"
+    "node": ">= 10 < 11"
   },
   "engine-strict": true,
   "lint-staged": {
